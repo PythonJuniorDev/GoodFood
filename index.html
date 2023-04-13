@@ -3,113 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <title>GoodFood</title>
+    <style>
+        /* Table style */
+        table, th, td {
+            border: 1px solid black;
+            text-align: center;
+            font-size: 0.8vw; /* Responsive font size */
+            padding: 4px 2px; /* Compact rows */
+        }
 
-        <style>
-table, th, td {
-  border:1px solid black;
-}
- </style>
+        /* Body background */
+        body {
+            background-image: url(https://img.freepik.com/free-vector/healthy-lifestyle-mobile-wallpaper-with-quote-eat-good-feel-good_53876-100539.jpg?w=2000);
+            background-size: 630px 800px;
+            background-repeat: repeat;
+            text-align: center;
+            padding-top: 50px;
+            position: relative;
+        }
+
+        /* Tooltip basic style */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+        }
+
+        /* Tooltip hidden text */
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            background-color: olivedrab;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 130%;
+            left: 50%;
+            margin-left: -60px;
+            width: 120px;
+            font-size: 1.5vw; /* Responsive font */
+        }
+
+        /* Show tooltip on hover */
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+
+        /* Center table over the background image */
+        .table-container {
+            position: absolute;
+            top: 300px; /* Adjust vertically */
+            left: 50%;
+            transform: translateX(-50%); /* Center horizontally */
+            width: 95%;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            table, th, td {
+                font-size: 2.5vw; /* Slightly bigger text on tablets */
+            }
+            .tooltip .tooltiptext {
+                font-size: 2vw;
+            }
+        }
+
+        @media (max-width: 480px) {
+            table, th, td {
+                font-size: 3.5vw; /* Bigger text on phones */
+            }
+            .tooltip .tooltiptext {
+                font-size: 2.8vw;
+            }
+            .tooltip {
+                right: 50px; /* Move tooltip closer on phones */
+                bottom: 80px;
+            }
+        }
+    </style>
 </head>
 <body>
-<br><br><br><br><br><br><br><br><br><br><br>
-<style> body{background-image: url(https://img.freepik.com/free-vector/healthy-lifestyle-mobile-wallpaper-with-quote-eat-good-feel-good_53876-100539.jpg?w=2000);background-size: 580px 630px;background-repeat: repeat;}</style>
+    <!-- Table with food categories -->
+    <div class="table-container">
+        <table style="width: 100%; border-spacing: 0;">
+            <thead>
+                <tr>
+                    <th>Beverages</th>
+                    <th>Meals</th>
+                    <th>Snacks</th>
+                    <th>Fruits & Nuts</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pomegranate juice</td>
+                    <td>Quinoa & Pecan Salad &#127793;</td>
+                    <td>Healthy egg toast</td>
+                    <td>Bowl of watermelon parts</td>
+                </tr>
+                <tr>
+                    <td>Sports drink</td>
+                    <td>Grilled chicken</td>
+                    <td>Veggies & hummus &#127793;</td>
+                    <td>Bowl of berries</td>
+                </tr>
+                <tr>
+                    <td>Low fat milk</td>
+                    <td>Pasta Arabiatta</td>
+                    <td>Greek yogurt with mango, nuts, and seeds</td>
+                    <td>Banana</td>
+                </tr>
+                <tr>
+                    <td>Strawberry-banana smoothie</td>
+                    <td>Salmon with sweet potatoes</td>
+                    <td>Mini eggplant pizzas &#127793;</td>
+                    <td>Apple</td>
+                </tr>
+                <tr>
+                    <td>Green Tea</td>
+                    <td>Spinach and ricotta penne</td>
+                    <td>Whole-grain bagel with cream cheese, walnuts, and honey</td>
+                    <td>Peach</td>
+                </tr>
+                <tr>
+                    <td>Cappuccino</td>
+                    <td>Creamy tomato risotto &#127793;</td>
+                    <td>Lentil soup &#127793;</td>
+                    <td>Bowl of almonds, walnuts, and peanuts</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-<div class="tooltip"> OPENING HOURS
-  <span class="tooltiptext">Every day<br>09:00-17:00</span>
-</div>
-
-<style>
-.tooltip {
-  position: relative;
-  left: 35%;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: olivedrab;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-  bottom: 130%;
-  left: 50%;
-  margin-left: -60px;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-</style>
-
-
-
-
-
-
-
-
-<body style="text-align:center;">
-
-<blockquote>
-<table style="width:100%">
-    <br>
-    <tr>
-        <th>&nbsp;Beverages</th>
-        <th>&nbsp;Meals</th>
-        <th>&nbsp;Snacks</th>
-        <th>&nbsp;Fruits & nuts</th>
-    </tr>
-
-     <tr>
-      <td>&nbsp;&nbsp;&nbsp;Pomegranate juice</td>
-      <td>&nbsp;&nbsp;&nbsp;Quinoa & Pecan Salad &nbsp;&#127793;</td>
-      <td>&nbsp;&nbsp;&nbsp;Healthy egg toast</td>
-      <td>&nbsp;&nbsp;&nbsp;Bowl of watermelon parts</td>
-  </tr>
-
-  <tr>
-      <td>&nbsp;&nbsp;&nbsp;Sports drink</td>
-      <td>&nbsp;&nbsp;&nbsp;Grilled chicken</td>
-      <td>&nbsp;&nbsp;&nbsp;Veggies & hummus &nbsp;&#127793;</td>
-      <td>&nbsp;&nbsp;&nbsp;Bowl of berries</td>
-  </tr>
-
-    <tr>
-        <td>&nbsp;&nbsp;&nbsp;Low fat milk</td>
-        <td>&nbsp;&nbsp;&nbsp;Pasta Arabiatta</td>
-        <td>&nbsp;&nbsp;&nbsp;Greek yogurt with mango, nuts and seeds</td>
-        <td>&nbsp;&nbsp;&nbsp;Banana</td>
-    </tr>
-
-    <tr>
-        <td>&nbsp;&nbsp;&nbsp;Strawberry-banana smoothie</td>
-        <td>&nbsp;&nbsp;&nbsp;Salmon with sweet potatoes</td>
-        <td>&nbsp;&nbsp;&nbsp;Mini eggplant pizzas &nbsp;&#127793;</td>
-        <td>&nbsp;&nbsp;&nbsp;Apple</td>
-    </tr>
-
-    <tr>
-        <td>&nbsp;&nbsp;&nbsp;Green Tea</td>
-        <td>&nbsp;&nbsp;&nbsp;Spinach and ricotta penne &nbsp;&#127793;</td>
-        <td>&nbsp;&nbsp;&nbsp;Whole-grain bagel with creamcheese, walnuts and honey </td>
-        <td>&nbsp;&nbsp;&nbsp;Peach</td>
-    </tr>
-
-    <tr>
-        <td>&nbsp;&nbsp;&nbsp;Cappuccino</td>
-        <td>&nbsp;&nbsp;&nbsp;Creamy tomato risotto &nbsp;&#127793;</td>
-        <td>&nbsp;&nbsp;&nbsp;Lentil soup &nbsp;&#127793;</td>
-        <td>&nbsp;&nbsp;&nbsp;Bowl of almonds, walnuts and peanuts</td>
-    </tr>
-
-</table></blockquote>
-
+    <!-- Tooltip with opening hours -->
+    <div class="tooltip" style="position: fixed; bottom: 110px; right: 200px;">
+        <b>OPENING HOURS</b>
+        <span class="tooltiptext">Every day<br>09:00-17:00</span>
+    </div>
 </body>
 </html>
